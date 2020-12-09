@@ -1,19 +1,26 @@
 var mysql = require("mysql");
 var inquirer = require("inquirer");
 
+const confirm = require('inquirer-confirm');
+
 var connection = mysql.createConnection({
   host: "localhost",
 
-  // Your port; if not 3306
+ // Your port; if not 3306
   port: 3306,
 
   // Your username
   user: "root",
 
   // Your password
-  password: "",
+  password: "root",
   database: "Employee_tracker"
 });
+
+var showRoles;
+var showDepartments;
+var showEmployees;
+
 
 connection.connect(function(err) {
     if (err) throw err;
@@ -52,4 +59,8 @@ connection.connect(function(err) {
     
         }
       });
+  }
+
+  function departmentView() {
+      var 
   }
