@@ -31,3 +31,50 @@ CREATE TABLE employee (
 
   PRIMARY KEY (id)
 );
+
+SELECT * from department;
+SELECT * from role;
+SELECT * from employee;
+
+// Departments
+
+INSERT INTO department (name)
+VALUES ("Marketing");
+
+INSERT INTO department (name)
+VALUES ("Sales");
+
+INSERT INTO department (name)
+VALUES ("Customer Service");
+
+INSERT INTO department (name)
+VALUES ("Manager");
+
+// Roles, salary, department
+
+INSERT INTO role (title, salary, department_id)
+VALUES ("Marketing", 85000, 1);
+
+INSERT INTO role (title, salary, department_id)
+VALUES ("Sales", 55000, 1);
+
+INSERT INTO role (title, salary, department_id)
+VALUES ("Customer Service", 35000, 2);
+
+INSERT INTO role (title, salary, department_id)
+VALUES ("Manager", 100000, 3);
+
+
+// Employee Info
+
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES ("Katie", "Newton", 1);
+
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES ("John", "Doe", 1);
+
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES ("Jane", "Doe", 2);
+
+INSERT INTO employee (first_name, last_name, role_id)
+VALUES ("Howard", "McAllister", 3);
